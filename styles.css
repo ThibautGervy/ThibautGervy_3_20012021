@@ -1,0 +1,25 @@
+* {
+    width : 375px;
+    margin: auto;
+}
+
+.logo_homepage {
+    width: 38px;
+    align-items: center;
+}
+
+.localisation {
+    background-color: rgba(190, 189, 189, 0.788);
+    display: flex;
+    height: 35px;
+    align-items: center;
+}
+
+.fa-map-marker-alt {
+    width: auto;
+}
+
+.localisation_city_name {
+    margin-left: 15px;
+}
+
