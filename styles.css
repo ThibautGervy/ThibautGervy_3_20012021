@@ -4,8 +4,12 @@
 
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
 
 /******************** HEADER *********************/
 
@@ -17,6 +21,7 @@ body {
 .header_param p {
     text-align: center;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .header_param img {
@@ -27,7 +32,7 @@ body {
 .localisation {
     display : flex;
     align-items: center;
-    background-color: rgba(194, 194, 194, 0.521);
+    background-color: rgb(222 222 222 / 52%);
     height: 40px;
 }
 
@@ -41,6 +46,8 @@ body {
 
 .localisation_city_name {
     margin-left: 15px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 
@@ -49,12 +56,13 @@ body {
 .explore_menu_content {
     width: 375px;
     margin : auto;
-    background-color: rgba(194, 194, 194, 0.151);
+    background-color: rgb(210 210 210 / 15%);;
     padding: 15px 0px;
 }
 
 .explore_menu_content h1 {
     text-align: center;
+    font-weight: bold;
 }
 
 .explore_menu_content p {
@@ -62,11 +70,13 @@ body {
 }
 
 .btn_explore_menu {
-    padding : 10px 5px;
+    padding : 14px 14px;
     border-radius: 5em;
-    background-color: violet;
+    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
     border : none;
     color: white;
+    font-weight: bold;
+    cursor:pointer;
 }
 
 
@@ -81,6 +91,7 @@ body {
 
 .step_title {
     padding-left: 10px;
+    font-size: 21px;
 }
 
 
@@ -104,18 +115,22 @@ body {
 }
 
 .number {
-    background-color: rgba(128, 0, 128, 0.637);
-    border-radius: 50%;
-    padding: 4px; 
+    background-color: #9356DC;
+    border-radius: 57%;
+    padding: 8px; 
     margin-left: -13px;
     color: white;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .description {
     font-weight: bold;
 }
 
+.description_1 {
+    font-weight: bold;
+    margin-left: 5px;
+}
 
 .step_by_step_2 {
     margin-top: 15px;
@@ -152,16 +167,22 @@ body {
 
 /******************* RESTAURANTS ******************/
 
+/********* RESTAURANT 1 **********/
+
 .vignettes_restaurant {
     width: 375px;
     margin: auto;
     margin-top: 65px;
     background-color: rgba(194, 194, 194, 0.151);
+    height: 1256px;
+    
 }
 
 .title_restaurant {
     padding-left: 10px;
     padding-top: 40px;
+    font-weight: bold;
+    font-size: 21px;
 }
 
 .vignettes_restaurant_1 img {
@@ -175,7 +196,9 @@ body {
     background-color: white;
     margin: 0px 15px;
     border-radius: 1em;
-    height: 292px;
+    height: 288px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 3px rgb(226, 226, 226);
 }
 
 .new_restaurant {
@@ -185,9 +208,10 @@ body {
     margin-bottom: 57%;
     text-align: right;
     margin-left: 254px;
-    background-color: rgb(0, 128, 79);
+    background-color: #99E2D0;
     width: 70px;
-    color: rgba(22, 240, 22, 0.884);
+    color: rgb(2, 32, 2);
+    font-weight: bold;
 }
 
 .nom_restaurant {
@@ -195,14 +219,139 @@ body {
     padding-left: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
+    color: black;
+    font-size: 15px;
 }
 
 .description_restaurant {
     margin-top: 0px;
     padding-left: 10px;
     float: left;
+    color: black;
+    font-size: 13px;
 }
 
 .fa-heart {
     margin-left: 213px;
+}
+
+/********* RESTAURANT 2 **********/
+
+.vignettes_restaurant_2 img {
+    width: 346px;
+    height: 200px;
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+.vignettes_restaurant_2 {
+    background-color: white;
+    margin: 0px 15px;
+    border-radius: 1em;
+    height: 260px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 3px rgb(226, 226, 226);
+}
+
+.new_restaurant_2 {
+    padding: 5px 5px;
+    position: relative;
+    margin-top: -54%;
+    margin-bottom: 47%;
+    text-align: right;
+    margin-left: 254px;
+    background-color: #99E2D0;
+    width: 70px;
+    color: rgb(2, 32, 2);
+    font-weight: bold;
+}
+
+/********* RESTAURANT 3 **********/
+
+.vignettes_restaurant_3 img {
+    width: 346px;
+    height: 200px;
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+.vignettes_restaurant_3 {
+    background-color: white;
+    margin: 0px 15px;
+    border-radius: 1em;
+    height: 260px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 3px rgb(226, 226, 226);
+}
+
+
+/********* RESTAURANT 4 **********/
+
+.vignettes_restaurant_4 img {
+    width: 346px;
+    height: 200px;
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+.vignettes_restaurant_4 {
+    background-color: white;
+    margin: 0px 15px;
+    border-radius: 1em;
+    height: 260px;
+    box-shadow: 3px 3px 3px rgb(226, 226, 226);
+}
+
+
+
+/******************* FOOTER ******************/
+
+.footer_ohmyfood {
+    background-color: rgb(58, 56, 56);
+    padding-left: 15px;
+    padding-top: 10px;
+    height: 170px;
+    text-align: left;
+}
+
+.footer_ohmyfood ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footer_ohmyfood li {
+    color: white;
+    padding-top: 9px;
+    font-size: 13px;
+}
+
+.logo_ohmyfood_footer {
+    color: white;
+    font-family:'Shrikhand', cursive; 
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.fa-hands-helping {
+    padding-right: 5px;
+}
+
+.fa-utensils {
+    padding-right: 11px;
+}
+
+a {
+    color: white;
+}
+
+
+
+/******************* RESPONSIVE ******************/
+
+/********* TABLETTE **********/
+
+@media (min-width: 768px) {
+    .header_param {
+        width: auto;
+    }
 }
