@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/******************** HEADER *********************/
+
+.container {
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.container img {
+    width: 120px;
+}
+
+.container_home {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.fa-arrow-left {
+    color: black;
+}
+
+.background_header img {
+    width: 375px;
+    height: 241px;
+    object-fit: cover;
+}
+
+
+/******************** MENU CARTE *********************/
+ 
+.menu_carte_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.menu_carte_title h1 {
+    font-size: 27px;
+    margin-left: 15px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.fa-heart {
+    margin-right: 50px;
+}
+
+.ensemble_menu_carte {
+    background-color: rgb(202, 202, 202);
+    border-top-left-radius: 2em;
+    border-top-right-radius : 2em;
+    margin-top: -35px;
+    position: absolute;
+    width: 375px;
+}
+
+
+.menu_carte_entrees h3 {
+    font-size: 14px;
+    font-weight: 300px;
+    text-decoration : underline;
+    text-underline-offset: 3px;
+    text-decoration-color: green;
+    margin-left: 15px;
+}
+
+
+/******************** MENU 1 *********************/
+
+
+.menu_carte_entrees_1 {
+    background-color: white;
+    border-radius: 0.7em;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 56px;
+}
+
+.nom_plat {
+    font-weight: bold;
+    margin-bottom: -18px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.description_plat {
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.description_plat, .prix {
+    display: inline-block;
+}
+
+.prix {
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/******************** MENU 2 *********************/
+
+.menu_carte_entrees_2 {
+    background-color: white;
+    border-radius: 0.7em;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 56px;
+}
+
+/******************** MENU 3 *********************/
+
+.menu_carte_entrees_3 {
+    background-color: white;
+    border-radius: 0.7em;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 56px;
+}
+
+
+/******************** MENU 4 *********************/
+
+.menu_carte_entrees_4 {
+    background-color: white;
+    border-radius: 0.7em;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 56px;
+}
+
+/******************** PLAT 1 *********************/
+
+.menu_carte_plats_1 {
+    background-color: white;
+    border-radius: 0.7em;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 56px;
+}
+
+/******************** PLAT 2 *********************/
+
+.menu_carte_plats_2 {
+    background-color: white;
+    border-radius: 0.7em;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 56px;
+}
+
+/******************** PLAT 3 *********************/
+
+.menu_carte_plats_3 {
+    background-color: white;
+    border-radius: 0.7em;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 56px;
+}
+
+/******************** DESSERT 1 *********************/
+
+.menu_carte_desserts_1 {
+    background-color: white;
+    border-radius: 0.7em;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 56px;
+}
+
+/******************** DESSERT 2 *********************/
+
+.menu_carte_desserts_2 {
+    background-color: white;
+    border-radius: 0.7em;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 56px;
+}
+
+/******************** DESSERT 3 *********************/
+
+.menu_carte_desserts_3 {
+    background-color: white;
+    border-radius: 0.7em;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 56px;
+}
+
+
+
+/******************** BOUTON *********************/
+
+.btn_explore_menu {
+    width: 170px;
+    line-height: 40px;
+    border-radius: 5em;
+    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
+    border : none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+}
+
+
+
+/******************* FOOTER ******************/
+
+.footer_ohmyfood {
+    background-color: rgb(58, 56, 56);
+    padding-left: 15px;
+    padding-top: 10px;
+    height: 170px;
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    margin-top: 933px;
+}
+
+.footer_ohmyfood ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footer_ohmyfood li {
+    color: white;
+    padding-top: 9px;
+    font-size: 13px;
+}
+
+.logo_ohmyfood_footer {
+    color: white;
+    font-family:'Shrikhand', cursive; 
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.fa-hands-helping {
+    padding-right: 5px;
+}
+
+.fa-utensils {
+    padding-right: 11px;
+}

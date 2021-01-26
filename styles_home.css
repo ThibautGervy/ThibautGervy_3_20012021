@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/******************** HEADER *********************/
+
+.header_param {
+    width: 375px;
+    margin: auto;
+}
+
+.header_param p {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.header_param img {
+    width: 150px;
+    margin: 10px 0px;
+}
+
+.localisation {
+    display : flex;
+    align-items: center;
+    background-color: rgb(222 222 222 / 52%);
+    height: 40px;
+}
+
+.fa-map-marker-alt, .localisation_city_name {
+    margin: 0 auto;
+}
+
+.fa-map-marker-alt {
+    margin-right: 0;
+}
+
+.localisation_city_name {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/**************** EXPLORE MENU ********************/
+
+.explore_menu_content {
+    width: 375px;
+    margin : auto;
+    background-color: rgb(210 210 210 / 15%);;
+    padding: 15px 0px;
+}
+
+.explore_menu_content h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.explore_menu_content p {
+    text-align: center;
+}
+
+.btn_explore_menu {
+    padding : 14px 14px;
+    border-radius: 5em;
+    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
+    border : none;
+    color: white;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+
+
+/**************** STEP ********************/
+
+.container_step {
+    width: 375px;
+    margin: auto;
+    margin-top: 33px;
+}
+
+.step_title {
+    padding-left: 10px;
+    font-size: 21px;
+}
+
+
+.step_by_step {
+    margin : 0px 20px;
+}
+
+.step_by_step_1 {
+    display: flex;
+    align-items: center;
+    background-color: rgba(194, 194, 194, 0.151);
+    padding: 0px 10px;
+    border-radius: 5em;
+    height: 70px;
+}
+
+.fa-mobile-alt {
+    padding-right: 25px;
+    padding-left: 25px;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+.number {
+    background-color: #9356DC;
+    border-radius: 57%;
+    padding: 8px; 
+    margin-left: -13px;
+    color: white;
+    font-size: 12px;
+}
+
+.description {
+    font-weight: bold;
+}
+
+.description_1 {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.step_by_step_2 {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(194, 194, 194, 0.151);
+    padding: 0px 10px;
+    border-radius: 5em;
+    height: 70px;
+}
+
+.fa-list {
+    padding-right: 25px;
+    padding-left: 25px;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+.step_by_step_3 {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(194, 194, 194, 0.151);
+    padding: 0px 10px;
+    border-radius: 5em;
+    height: 70px;
+}
+
+.fa-store {
+    padding-right: 25px;
+    padding-left: 25px;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+
+/******************* RESTAURANTS ******************/
+
+/********* RESTAURANT 1 **********/
+
+.vignettes_restaurant {
+    width: 375px;
+    margin: auto;
+    margin-top: 65px;
+    background-color: rgba(194, 194, 194, 0.151);
+    height: 1256px;
+    
+}
+
+.title_restaurant {
+    padding-left: 10px;
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.vignettes_restaurant_1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1em;
+}
+
+.vignettes_restaurant_1 {
+    margin: auto;
+    background-color: white;
+    margin: 0px 15px;
+    border-radius: 1em;
+    height: 288px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 3px rgb(226, 226, 226);
+}
+
+.new_restaurant {
+    padding: 5px 5px;
+    position: relative;
+    margin-top: -64%;
+    margin-bottom: 57%;
+    text-align: right;
+    margin-left: 254px;
+    background-color: #99E2D0;
+    width: 70px;
+    color: rgb(2, 32, 2);
+    font-weight: bold;
+}
+
+.nom_restaurant {
+    font-weight: bold;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 15px;
+}
+
+.description_restaurant {
+    margin-top: 0px;
+    padding-left: 10px;
+    float: left;
+    color: black;
+    font-size: 13px;
+}
+
+.fa-heart {
+    margin-left: 213px;
+}
+
+/********* RESTAURANT 2 **********/
+
+.vignettes_restaurant_2 img {
+    width: 346px;
+    height: 200px;
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+.vignettes_restaurant_2 {
+    background-color: white;
+    margin: 0px 15px;
+    border-radius: 1em;
+    height: 260px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 3px rgb(226, 226, 226);
+}
+
+.new_restaurant_2 {
+    padding: 5px 5px;
+    position: relative;
+    margin-top: -54%;
+    margin-bottom: 47%;
+    text-align: right;
+    margin-left: 254px;
+    background-color: #99E2D0;
+    width: 70px;
+    color: rgb(2, 32, 2);
+    font-weight: bold;
+}
+
+/********* RESTAURANT 3 **********/
+
+.vignettes_restaurant_3 img {
+    width: 346px;
+    height: 200px;
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+.vignettes_restaurant_3 {
+    background-color: white;
+    margin: 0px 15px;
+    border-radius: 1em;
+    height: 260px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 3px rgb(226, 226, 226);
+}
+
+
+/********* RESTAURANT 4 **********/
+
+.vignettes_restaurant_4 img {
+    width: 346px;
+    height: 200px;
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+.vignettes_restaurant_4 {
+    background-color: white;
+    margin: 0px 15px;
+    border-radius: 1em;
+    height: 260px;
+    box-shadow: 3px 3px 3px rgb(226, 226, 226);
+}
+
+
+
+/******************* FOOTER ******************/
+
+.footer_ohmyfood {
+    background-color: rgb(58, 56, 56);
+    padding-left: 15px;
+    padding-top: 10px;
+    height: 170px;
+    text-align: left;
+}
+
+.footer_ohmyfood ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footer_ohmyfood li {
+    color: white;
+    padding-top: 9px;
+    font-size: 13px;
+}
+
+.logo_ohmyfood_footer {
+    color: white;
+    font-family:'Shrikhand', cursive; 
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.fa-hands-helping {
+    padding-right: 5px;
+}
+
+.fa-utensils {
+    padding-right: 11px;
+}
+
+a {
+    color: white;
+}
+
+
+
+/******************* RESPONSIVE ******************/
+
+/********* TABLETTE **********/
+
+@media (min-width: 768px) {
+    .header_param {
+        width: auto;
+    }
+}
