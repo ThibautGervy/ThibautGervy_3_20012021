@@ -17,7 +17,8 @@ a {
     width: auto;
     margin: auto;
     display: flex;
-    justify-content: center;
+    height: 40px;
+    align-items: center;
 }
 
 .container p {
@@ -27,6 +28,7 @@ a {
 
 .container img {
     width: 120px;
+    margin-left: 102px;
 }
 
 .container_home {
@@ -36,6 +38,7 @@ a {
 
 .fa-arrow-left {
     color: black;
+    margin-left: 20px;
 }
 
 .background_header img {
@@ -65,12 +68,14 @@ a {
 }
 
 .ensemble_menu_carte {
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(240, 240, 240);
     border-top-left-radius: 2em;
     border-top-right-radius : 2em;
     margin-top: -35px;
     position: absolute;
     width: 375px;
+    font-family: 'Roboto';
+    height: 968px;
 }
 
 
@@ -93,29 +98,36 @@ a {
     margin-left: 12px;
     margin-right: 12px;
     height: 56px;
+    
 }
 
 .nom_plat {
     font-weight: bold;
-    margin-bottom: -18px;
+    margin-bottom: -3px;
     margin-left: 10px;
     padding-top: 10px;
+    color: black;
 }
 
 .description_plat {
     font-size: 12px;
-    margin-top: 0;
+    margin-top: 5px;
     margin-left: 10px;
+    color: black;
+    float: left;
+    margin-bottom: 0;
 }
 
 .description_plat, .prix {
-    display: inline-block;
+    color: black;
 }
 
 .prix {
-    margin-left: 30px;
+    text-align: right;
+    width: 339px;
+    font-size: 13px;
     font-weight: bold;
-    font-size: 15px;
+    margin: 0;
 }
 
 
@@ -214,6 +226,11 @@ a {
 
 /******************** BOUTON *********************/
 
+.bouton_commander p {
+    text-align: center;
+}
+
+
 .btn_explore_menu {
     width: 170px;
     line-height: 40px;
@@ -223,7 +240,7 @@ a {
     color: white;
     font-weight: bold;
     cursor: pointer;
-    margin: auto;
+    margin-top: 15px;
 }
 
 
@@ -265,4 +282,8 @@ a {
 
 .fa-utensils {
     padding-right: 11px;
+}
+
+.footer_ohmyfood a {
+    color: white;
 }
