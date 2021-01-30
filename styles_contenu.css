@@ -372,6 +372,7 @@ a {
 .menu_carte_entrees_4{
     animation-name : animationmenu ;
     animation-duration: 2s;
+    margin-top : 10px;
 }
 
 @keyframes animationmenu {
