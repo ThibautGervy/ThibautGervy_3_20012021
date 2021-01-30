@@ -98,14 +98,14 @@ a {
     margin-left: 12px;
     margin-right: 12px;
     height: 56px;
-    
+    overflow: hidden;
 }
 
 .nom_plat {
+    
     font-weight: bold;
     margin-bottom: -3px;
     margin-left: 10px;
-    padding-top: 10px;
     color: black;
 }
 
@@ -139,6 +139,8 @@ a {
     margin-left: 12px;
     margin-right: 12px;
     height: 56px;
+    overflow: hidden;
+    margin-top: 10px;
 }
 
 /******************** MENU 3 *********************/
@@ -149,6 +151,8 @@ a {
     margin-left: 12px;
     margin-right: 12px;
     height: 56px;
+    overflow: hidden;
+    margin-top: 10px;
 }
 
 
@@ -160,6 +164,7 @@ a {
     margin-left: 12px;
     margin-right: 12px;
     height: 56px;
+    overflow: hidden;
 }
 
 /******************** PLAT 1 *********************/
@@ -170,6 +175,7 @@ a {
     margin-left: 12px;
     margin-right: 12px;
     height: 56px;
+    overflow: hidden;
 }
 
 /******************** PLAT 2 *********************/
@@ -180,6 +186,8 @@ a {
     margin-left: 12px;
     margin-right: 12px;
     height: 56px;
+    overflow: hidden;
+    margin-top: 10px;
 }
 
 /******************** PLAT 3 *********************/
@@ -190,6 +198,8 @@ a {
     margin-left: 12px;
     margin-right: 12px;
     height: 56px;
+    overflow: hidden;
+    margin-top: 10px;
 }
 
 /******************** DESSERT 1 *********************/
@@ -200,6 +210,7 @@ a {
     margin-left: 12px;
     margin-right: 12px;
     height: 56px;
+    overflow: hidden;
 }
 
 /******************** DESSERT 2 *********************/
@@ -210,6 +221,8 @@ a {
     margin-left: 12px;
     margin-right: 12px;
     height: 56px;
+    overflow: hidden;
+    margin-top: 10px;
 }
 
 /******************** DESSERT 3 *********************/
@@ -220,6 +233,8 @@ a {
     margin-left: 12px;
     margin-right: 12px;
     height: 56px;
+    overflow: hidden;
+    margin-top: 10px;
 }
 
 
@@ -241,8 +256,13 @@ a {
     font-weight: bold;
     cursor: pointer;
     margin-top: 15px;
+    box-shadow: 0 3px 3px rgb(226, 226, 226);
 }
 
+.btn_explore_menu:hover {
+    background: linear-gradient(to bottom right,#fab0e5,#b79adb);
+    box-shadow: 0 3px 3px rgb(121, 120, 120);
+}
 
 
 /******************* FOOTER ******************/
@@ -287,3 +307,124 @@ a {
 .footer_ohmyfood a {
     color: white;
 }
+
+
+/******************* ANIMATION  ******************/
+
+
+/************** CHECK MENU 
+
+.menu_item_icon {
+    animation: confirmation 0.7s;
+    animation-delay: 0s;
+    color: green;
+    background-color: rgb(255, 255, 255);
+    height: 25px;
+    width: 25px; 
+    border-radius: 50%;
+    
+}
+
+.menu_comfirmation_icon {
+    background-color: rgba(0, 128, 0, 0.445);
+    width: 100px;
+    height: 56px;
+    animation: confirmation 0.7s;
+    text-align: center;
+    margin-left: 352px;
+}
+
+@keyframes confirmation {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-4rem);
+    }
+    75% {
+      transform: translateX(-4rem);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+**************/
+
+/********* ANIAMATION PLATS **********/
+
+
+.menu_carte_entrees_1{
+     animation-name : animationmenu ;
+     animation-duration: 0.5s;
+     
+}
+
+.menu_carte_entrees_2 {
+    animation-name : animationmenu ;
+    animation-duration: 1s;
+} 
+       
+.menu_carte_entrees_3{
+     animation-name : animationmenu ;
+     animation-duration: 1.5s;
+}
+
+.menu_carte_entrees_4{
+    animation-name : animationmenu ;
+    animation-duration: 2s;
+}
+
+@keyframes animationmenu {
+    from { 
+        opacity: 0%;
+        transform: translateY(4em);
+        }
+    to {
+        opacity: 100%;
+        transform: translateY(0em);
+    }
+}
+
+
+
+/************** CHECK MENU **********/
+
+.menu_comfirmation {
+    margin: -47px 271px;
+    background-color: #99E2D0;
+    width: 80px;
+    height: 56px;
+    color: white;
+    transform: translateX(80px);
+    transition: transform 0.4s;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    margin-right: 0px;
+}
+
+.menu_comfirmation_icon {
+    transition: transform 0.4s;
+    font-size: 18px;
+}
+
+.animation_green:hover .menu_comfirmation {
+    cursor: pointer;
+    transform: translateX(0);
+}
+
+.animation_green:hover .menu_comfirmation_icon{
+    transform: rotate(-360deg);
+}
+
+.prix {
+    transform: translateX(0px);
+    transition: transform 0.4s;
+}
+
+.animation_green:hover .prix {
+    transform: translateX(-90px);
+}
+
+

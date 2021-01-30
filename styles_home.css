@@ -76,7 +76,13 @@ a {
     border : none;
     color: white;
     font-weight: bold;
-    cursor:pointer;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgb(226, 226, 226);
+}
+
+.btn_explore_menu:hover {
+    background: linear-gradient(to bottom right,#fab0e5,#b79adb);
+    box-shadow: 0 5px 5px rgb(121, 120, 120);
 }
 
 
@@ -106,6 +112,7 @@ a {
     padding: 0px 10px;
     border-radius: 5em;
     height: 70px;
+    box-shadow: 0 4px 4px rgb(226, 226, 226);
 }
 
 .fa-mobile-alt {
@@ -118,7 +125,7 @@ a {
     background-color: #9356DC;
     border-radius: 57%;
     padding: 8px; 
-    margin-left: -13px;
+    margin-left: -17px;
     color: white;
     font-size: 12px;
 }
@@ -140,6 +147,7 @@ a {
     padding: 0px 10px;
     border-radius: 5em;
     height: 70px;
+    box-shadow: 0 4px 4px rgb(226, 226, 226);
 }
 
 .fa-list {
@@ -156,6 +164,7 @@ a {
     padding: 0px 10px;
     border-radius: 5em;
     height: 70px;
+    box-shadow: 0 4px 4px rgb(226, 226, 226);
 }
 
 .fa-store {
@@ -215,10 +224,15 @@ a {
     font-weight: bold;
 }
 
+.restaurant_class {
+    display: flex;
+}
+
+
 .nom_restaurant {
     font-weight: bold;
     padding-left: 10px;
-    margin-top: 5px;
+    margin-top: -2px;
     margin-bottom: 5px;
     color: black;
     font-size: 15px;
@@ -227,14 +241,38 @@ a {
 .description_restaurant {
     margin-top: 0px;
     padding-left: 10px;
-    float: left;
     color: black;
     font-size: 13px;
 }
 
-.fa-heart {
-    margin-left: 213px;
+.fa-heart, .description_restaurant {
+    display: inline-block;
 }
+
+.like--nobg {
+    width: 321px; 
+    position: absolute;
+    text-align: right;
+    margin-top: 14px;
+}
+
+.like--bg {
+    text-align: right;
+    width: 193px;
+    opacity: 0;
+    color : #b79adb;
+    margin-top: 14px;
+}
+
+.like--bg:hover{
+    transition-duration: .25s;
+    opacity: 1; 
+}
+
+.like--bg:hover .like--nobg {
+    opacity: 0;
+}
+
 
 /********* RESTAURANT 2 **********/
 
@@ -346,6 +384,102 @@ a {
 }
 
 
+
+/******************* ANIMATION  ******************/
+
+/********* REMPLISSAGE DU COEUR **********/
+
+.heart_remplissage {
+    transition: all 0.3s linear 0s;
+    transform: scaleX(0);
+}
+ 
+.fa-heart:hover .heart_remplissage{
+    height: 100%;
+    background-color: #33BEE5;
+    transform: scaleX(1);
+}
+
+
+/********* APPARITION FADE IN **********/
+
+
+
+
+
+/************ LOADER *****************/
+
+.loader {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(78, 78, 78, 0.9);
+        animation: loader 0.7s;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+        z-index: 10000;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+}
+
+.loader_item_1, .loader_item_2, .loader_item_3 {
+    height: 5rem;
+    width: 5rem;
+    animation: mouvement 2s;
+    animation-iteration-count: 1;
+}
+
+.loader_container {
+      display: flex;
+      width: 15rem;
+      justify-content: space-between;
+}
+
+.loader_item_1 {
+        color: #9356DC ;
+        font-family: 'Shrikhand';
+        font-size: 33px;
+}
+  
+.loader_item_2 {
+        color: #FF79DA ;
+        animation-delay: 0.25s;
+        font-family: 'Shrikhand';
+        font-size: 33px;
+}
+
+.loader_item_3 {
+        color: #99E2D0;
+        animation-delay: 0.5s;
+        font-family: 'Shrikhand';
+        font-size: 33px;
+}
+
+
+@keyframes loader {
+    100% {
+        opacity: 0;
+        z-index: -20;
+    }
+} 
+
+@keyframes mouvement {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(0.7rem);
+    }
+    75% {
+      transform: translateY(-0.7rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
 
 /******************* RESPONSIVE ******************/
 
