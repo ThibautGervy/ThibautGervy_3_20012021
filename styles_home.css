@@ -14,7 +14,7 @@ a {
 /******************** HEADER *********************/
 
 .header_param {
-    width: 375px;
+    width: auto;
     margin: auto;
 }
 
@@ -54,7 +54,7 @@ a {
 /**************** EXPLORE MENU ********************/
 
 .explore_menu_content {
-    width: 375px;
+    width: auto;
     margin : auto;
     background-color: rgb(210 210 210 / 15%);;
     padding: 15px 0px;
@@ -483,10 +483,53 @@ a {
 
 /******************* RESPONSIVE ******************/
 
-/********* TABLETTE **********/
+/********* ORDI **********/
 
-@media (min-width: 768px) {
-    .header_param {
+@media (min-width: 1024px) {
+    .step_by_step {
+        width: 700px;
+        margin: auto;
+    }   
+
+    .container_step {
         width: auto;
     }
+
+    .step_title {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .vignettes_restaurant_1, .vignettes_restaurant_2 {
+       width: 345px;
+       margin: auto;
+       height: 287px; 
+       margin-bottom: 40px;
+    }
+   
+    .vignettes_restaurant {
+        width: auto;
+        height: 730px;
+    }
+
+    .mediaqueries_ordi {
+        display: flex;
+    }
+
+    .title_restaurant {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 26px;
+    }
+
+    .vignettes_restaurant_2 img {
+        height: 230px;
+    }
+
+    .vignettes_restaurant_3, .vignettes_restaurant_4 {
+        width: 345px;
+        margin: auto;
+     }
+
+
 }
