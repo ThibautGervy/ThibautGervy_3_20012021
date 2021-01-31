@@ -312,44 +312,6 @@ a {
 /******************* ANIMATION  ******************/
 
 
-/************** CHECK MENU 
-
-.menu_item_icon {
-    animation: confirmation 0.7s;
-    animation-delay: 0s;
-    color: green;
-    background-color: rgb(255, 255, 255);
-    height: 25px;
-    width: 25px; 
-    border-radius: 50%;
-    
-}
-
-.menu_comfirmation_icon {
-    background-color: rgba(0, 128, 0, 0.445);
-    width: 100px;
-    height: 56px;
-    animation: confirmation 0.7s;
-    text-align: center;
-    margin-left: 352px;
-}
-
-@keyframes confirmation {
-    0% {
-      transform: translateX(0);
-    }
-    25% {
-      transform: translateX(-4rem);
-    }
-    75% {
-      transform: translateX(-4rem);
-    }
-    100% {
-      transform: translateX(0);
-    }
-}
-**************/
-
 /********* ANIAMATION PLATS **********/
 
 
@@ -429,3 +391,36 @@ a {
 }
 
 
+/******************* RESPONSIVE ******************/
+
+/********* ORDI **********/
+
+@media (min-width: 414px) {
+   .ensemble_menu_carte {
+       width: 100%;
+   }
+   .menu_carte_full{
+       margin: auto;
+       width: 375px;
+   }
+   .menu_carte_title {
+       margin: auto;
+       width: 375px;
+   }
+   .background_header img {
+       width: 100%;
+       height: 272px;
+       margin-top: 21px;
+   }
+   .container a{
+       width: 5%;
+       text-align: center;
+       margin-top: 20px;
+   }
+   .container img {
+       margin-left: 652px;
+       width: 162px;
+       margin-top: 20px;
+   }
+   
+}
