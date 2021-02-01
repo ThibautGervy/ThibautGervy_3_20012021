@@ -49,12 +49,12 @@ a {
 
 
 /******************** MENU CARTE *********************/
- 
+
 .menu_carte_title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .menu_carte_title h1 {
@@ -70,7 +70,7 @@ a {
 .ensemble_menu_carte {
     background-color: rgb(240, 240, 240);
     border-top-left-radius: 2em;
-    border-top-right-radius : 2em;
+    border-top-right-radius: 2em;
     margin-top: -35px;
     position: absolute;
     width: 375px;
@@ -82,10 +82,11 @@ a {
 .menu_carte_entrees h3 {
     font-size: 14px;
     font-weight: 300px;
-    text-decoration : underline;
+    text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-color: green;
     margin-left: 15px;
+    margin-top: 25px;
 }
 
 
@@ -106,6 +107,7 @@ a {
     margin-bottom: -3px;
     margin-left: 10px;
     color: black;
+    margin-top: 11px;
 }
 
 .description_plat {
@@ -117,7 +119,13 @@ a {
     margin-bottom: 0;
 }
 
-.description_plat, .prix {
+.animation_green p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.description_plat,
+.prix {
     color: black;
 }
 
@@ -262,36 +270,37 @@ a {
 /******************* ANIMATION  ******************/
 
 
-/********* ANIAMATION PLATS **********/
+/********* ANIAMATION PLATS FADE IN **********/
 
 
-.menu_carte_entrees_1{
-     animation-name : animationmenu ;
-     animation-duration: 0.5s;
-     
+.menu_carte_entrees_1, .menu_carte_entrees h3 {
+    animation-name: animationmenu;
+    animation-duration: 0.5s;
+
 }
 
-.menu_carte_entrees_2 {
-    animation-name : animationmenu ;
+.menu_carte_entrees_2, .menu_carte_plats_1  {
+    animation-name: animationmenu;
     animation-duration: 1s;
-} 
-       
-.menu_carte_entrees_3{
-     animation-name : animationmenu ;
-     animation-duration: 1.5s;
 }
 
-.menu_carte_entrees_4{
-    animation-name : animationmenu ;
+.menu_carte_entrees_3, .menu_carte_plats_2  {
+    animation-name: animationmenu;
+    animation-duration: 1.5s;
+}
+
+.menu_carte_entrees_4, .menu_carte_plats_3  {
+    animation-name: animationmenu;
     animation-duration: 2s;
-    margin-top : 10px;
+    margin-top: 10px;
 }
 
 @keyframes animationmenu {
-    from { 
+    from {
         opacity: 0%;
         transform: translateY(4em);
-        }
+    }
+
     to {
         opacity: 100%;
         transform: translateY(0em);
@@ -306,13 +315,13 @@ a {
     margin: -47px 271px;
     background-color: #99E2D0;
     width: 80px;
-    height: 56px;
+    height: 62px;
     color: white;
     transform: translateX(80px);
     transition: transform 0.4s;
     text-align: center;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     margin-right: 0px;
 }
@@ -327,8 +336,9 @@ a {
     transform: translateX(0);
 }
 
-.animation_green:hover .menu_comfirmation_icon{
-    transform: rotate(-360deg);
+.animation_green:hover .menu_comfirmation_icon {
+    transform: rotate(360deg);
+    transition: transform 0.8s;
 }
 
 .prix {
@@ -346,32 +356,37 @@ a {
 /********* ORDI **********/
 
 @media (min-width: 414px) {
-   .ensemble_menu_carte {
-       width: 100%;
-   }
-   .menu_carte_full{
-       margin: auto;
-       width: 375px;
-   }
-   .menu_carte_title {
-       margin: auto;
-       width: 375px;
-   }
-   .background_header img {
-       width: 100%;
-       height: 272px;
-       margin-top: 21px;
-   }
-   .container a{
-       width: 5%;
-       text-align: center;
-       margin-top: 20px;
-   }
-   .container img {
-       margin-left: auto;
-       margin-right: auto;
-       width: 162px;
-       margin-top: 20px;
-   }
-   
+    .ensemble_menu_carte {
+        width: 100%;
+    }
+
+    .menu_carte_full {
+        margin: auto;
+        width: 375px;
+    }
+
+    .menu_carte_title {
+        margin: auto;
+        width: 375px;
+    }
+
+    .background_header img {
+        width: 100%;
+        height: 272px;
+        margin-top: 21px;
+    }
+
+    .container a {
+        width: 5%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .container img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 162px;
+        margin-top: 20px;
+    }
+
 }

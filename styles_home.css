@@ -30,13 +30,14 @@ a {
 }
 
 .localisation {
-    display : flex;
+    display: flex;
     align-items: center;
     background-color: rgb(222 222 222 / 52%);
     height: 40px;
 }
 
-.fa-map-marker-alt, .localisation_city_name {
+.fa-map-marker-alt,
+.localisation_city_name {
     margin: 0 auto;
 }
 
@@ -55,8 +56,9 @@ a {
 
 .explore_menu_content {
     width: auto;
-    margin : auto;
-    background-color: rgb(210 210 210 / 15%);;
+    margin: auto;
+    background-color: rgb(210 210 210 / 15%);
+    ;
     padding: 15px 0px;
 }
 
@@ -86,7 +88,7 @@ a {
 
 
 .step_by_step {
-    margin : 0px 20px;
+    margin: 0px 20px;
 }
 
 .step_by_step_1 {
@@ -109,7 +111,7 @@ a {
 .number {
     background-color: #9356DC;
     border-radius: 57%;
-    padding: 8px; 
+    padding: 8px;
     margin-left: -17px;
     color: white;
     font-size: 12px;
@@ -166,12 +168,14 @@ a {
     transform: scale(1.07);
     box-shadow: 0 6px 6px rgb(226, 226, 226);
 }
+
 .step_by_step_2:hover {
     background-color: #9256dc25;
     transition-duration: 0.4s;
     transform: scale(1.07);
     box-shadow: 0 6px 6px rgb(226, 226, 226);
 }
+
 .step_by_step_3:hover {
     background-color: #9256dc25;
     transition-duration: 0.4s;
@@ -183,18 +187,18 @@ a {
 
 /********* RESTAURANT 1 **********/
 #restaurants {
-    background-color : rgba(194, 194, 194, 0.151);
+    background-color: rgba(194, 194, 194, 0.151);
 }
 
 
 .vignettes_restaurant {
-    width : 375px;
-    margin-left : auto;
-    margin-right : auto;
-    margin-top : 65px;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
     height: 1256px;
     font-family: 'Roboto';
-    
+
 }
 
 .title_restaurant {
@@ -207,7 +211,8 @@ a {
 .vignettes_restaurant_1 img {
     max-width: 100%;
     height: auto;
-    border-radius: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
 .vignettes_restaurant_1 {
@@ -254,33 +259,34 @@ a {
     font-size: 13px;
 }
 
-.fa-heart, .description_restaurant {
+.fa-heart,
+.description_restaurant {
     display: inline-block;
 }
 
-.like--nobg {
-    width: 321px; 
-    position: absolute;
-    text-align: right;
-    margin-top: 14px;
-}
-
-.like--bg {
+.like_nobg {
     width: 321px;
     position: absolute;
     text-align: right;
     margin-top: 14px;
-    color : #b79adb;
+}
+
+.like_bg {
+    width: 321px;
+    position: absolute;
+    text-align: right;
+    margin-top: 14px;
+    color: #b79adb;
     margin-top: 14px;
     opacity: 0;
 }
 
-.like--bg:hover{
+.like_bg:hover {
     transition-duration: .25s;
-    opacity: 1; 
+    opacity: 1;
 }
 
-.like--bg:hover .like--nobg {
+.like_bg:hover .like--nobg {
     opacity: 0;
 }
 
@@ -290,8 +296,9 @@ a {
 .vignettes_restaurant_2 img {
     width: 346px;
     height: 200px;
-    border-radius: 1em;
     object-fit: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
 .vignettes_restaurant_2 {
@@ -321,7 +328,8 @@ a {
 .vignettes_restaurant_3 img {
     width: 346px;
     height: 200px;
-    border-radius: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
     object-fit: cover;
 }
 
@@ -340,7 +348,8 @@ a {
 .vignettes_restaurant_4 img {
     width: 346px;
     height: 200px;
-    border-radius: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
     object-fit: cover;
 }
 
@@ -372,8 +381,8 @@ a {
     transition: all 0.3s linear 0s;
     transform: scaleX(0);
 }
- 
-.fa-heart:hover .heart_remplissage{
+
+.fa-heart:hover .heart_remplissage {
     height: 100%;
     background-color: #33BEE5;
     transform: scaleX(1);
@@ -383,22 +392,24 @@ a {
 /************ LOADER *****************/
 
 .loader {
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        background-color: rgba(78, 78, 78, 0.9);
-        animation: loader 0.7s;
-        animation-delay: 2s;
-        animation-fill-mode: both;
-        z-index: 10000;
-        display:flex;
-        align-items:center;
-        justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(78, 78, 78, 0.9);
+    animation: loader 0.7s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.loader_item_1, .loader_item_2, .loader_item_3 {
+.loader_item_1,
+.loader_item_2,
+.loader_item_3 {
     height: 5rem;
     width: 5rem;
     animation: mouvement 2s;
@@ -406,29 +417,29 @@ a {
 }
 
 .loader_container {
-      display: flex;
-      width: 15rem;
-      justify-content: space-between;
+    display: flex;
+    width: 15rem;
+    justify-content: space-between;
 }
 
 .loader_item_1 {
-        color: #9356DC ;
-        font-family: 'Shrikhand';
-        font-size: 33px;
+    color: #9356DC;
+    font-family: 'Shrikhand';
+    font-size: 33px;
 }
-  
+
 .loader_item_2 {
-        color: #FF79DA ;
-        animation-delay: 0.25s;
-        font-family: 'Shrikhand';
-        font-size: 33px;
+    color: #FF79DA;
+    animation-delay: 0.25s;
+    font-family: 'Shrikhand';
+    font-size: 33px;
 }
 
 .loader_item_3 {
-        color: #99E2D0;
-        animation-delay: 0.5s;
-        font-family: 'Shrikhand';
-        font-size: 33px;
+    color: #99E2D0;
+    animation-delay: 0.5s;
+    font-family: 'Shrikhand';
+    font-size: 33px;
 }
 
 
@@ -437,20 +448,23 @@ a {
         opacity: 0;
         z-index: -20;
     }
-} 
+}
 
 @keyframes mouvement {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     25% {
-      transform: translateY(0.7rem);
+        transform: translateY(0.7rem);
     }
+
     75% {
-      transform: translateY(-0.7rem);
+        transform: translateY(-0.7rem);
     }
+
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
@@ -462,7 +476,7 @@ a {
     .step_by_step {
         width: 700px;
         margin: auto;
-    }   
+    }
 
     .container_step {
         width: auto;
@@ -473,13 +487,14 @@ a {
         font-size: 26px;
     }
 
-    .vignettes_restaurant_1, .vignettes_restaurant_2 {
-       width: 345px;
-       margin: auto;
-       height: 287px; 
-       margin-bottom: 40px;
+    .vignettes_restaurant_1,
+    .vignettes_restaurant_2 {
+        width: 345px;
+        margin: auto;
+        height: 287px;
+        margin-bottom: 40px;
     }
-   
+
     .vignettes_restaurant {
         width: auto;
         height: 730px;
@@ -499,13 +514,15 @@ a {
         height: 230px;
     }
 
-    .vignettes_restaurant_3, .vignettes_restaurant_4 {
+    .vignettes_restaurant_3,
+    .vignettes_restaurant_4 {
         width: 345px;
         margin: auto;
-     }
+    }
+
     .new_restaurant_2 {
-        margin-top: -66%;
-        margin-bottom: 57%;
+        margin-top: -63%;
+        margin-bottom: 54%;
     }
 }
 
@@ -518,25 +535,28 @@ a {
     .container_step {
         width: auto;
     }
+
     .step_by_step {
         width: 700px;
         margin: auto;
-    }   
+    }
+
     .step_title {
         text-align: center;
         font-size: 26px;
     }
+
     .title_restaurant {
         text-align: center;
         margin-bottom: 25px;
         font-size: 26px;
     }
+
     #restaurants {
-    background-color: rgba(194, 194, 194, 0.151);
+        background-color: rgba(194, 194, 194, 0.151);
     }
-    
+
     .vignettes_restaurant {
         background-color: rgba(255, 255, 255, 0);
     }
 }
-  
