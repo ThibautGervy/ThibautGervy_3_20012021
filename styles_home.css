@@ -200,12 +200,16 @@ a {
 /******************* RESTAURANTS ******************/
 
 /********* RESTAURANT 1 **********/
+#restaurants {
+    background-color : rgba(194, 194, 194, 0.151);
+}
+
 
 .vignettes_restaurant {
-    width: 375px;
-    margin: auto;
-    margin-top: 65px;
-    background-color: rgba(194, 194, 194, 0.151);
+    width : 375px;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : 65px;
     height: 1256px;
     font-family: 'Roboto';
     
@@ -320,8 +324,8 @@ a {
 .new_restaurant_2 {
     padding: 5px 5px;
     position: relative;
-    margin-top: -66%;
-    margin-bottom: 57%;
+    margin-top: -56%;
+    margin-bottom: 48%;
     text-align: right;
     margin-left: 254px;
     background-color: #99E2D0;
@@ -555,6 +559,10 @@ a {
         width: 345px;
         margin: auto;
      }
+    .new_restaurant_2 {
+        margin-top: -66%;
+        margin-bottom: 57%;
+    }
 }
 
 
