@@ -261,7 +261,9 @@ a {
 
 .btn_explore_menu:hover {
     background: linear-gradient(to bottom right,#fab0e5,#b79adb);
-    box-shadow: 0 3px 3px rgb(121, 120, 120);
+    transition-duration: 0.4s;
+    transform: scale(1.07);
+    box-shadow: 0 6px 6px rgb(226, 226, 226);
 }
 
 
@@ -418,7 +420,8 @@ a {
        margin-top: 20px;
    }
    .container img {
-       margin-left: 652px;
+       margin-left: auto;
+       margin-right: auto;
        width: 162px;
        margin-top: 20px;
    }

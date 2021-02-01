@@ -82,7 +82,9 @@ a {
 
 .btn_explore_menu:hover {
     background: linear-gradient(to bottom right,#fab0e5,#b79adb);
-    box-shadow: 0 5px 5px rgb(121, 120, 120);
+    transition-duration: 0.4s;
+    transform: scale(1.07);
+    box-shadow: 0 6px 6px rgb(226, 226, 226);
 }
 
 
@@ -106,6 +108,7 @@ a {
 }
 
 .step_by_step_1 {
+    cursor: pointer;
     display: flex;
     align-items: center;
     background-color: rgba(194, 194, 194, 0.151);
@@ -140,6 +143,7 @@ a {
 }
 
 .step_by_step_2 {
+    cursor: pointer;
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -157,6 +161,7 @@ a {
 }
 
 .step_by_step_3 {
+    cursor: pointer;
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -173,6 +178,24 @@ a {
     color: rgba(0, 0, 0, 0.616);
 }
 
+.step_by_step_1:hover {
+    background-color: #9256dc25;
+    transition-duration: 0.4s;
+    transform: scale(1.07);
+    box-shadow: 0 6px 6px rgb(226, 226, 226);
+}
+.step_by_step_2:hover {
+    background-color: #9256dc25;
+    transition-duration: 0.4s;
+    transform: scale(1.07);
+    box-shadow: 0 6px 6px rgb(226, 226, 226);
+}
+.step_by_step_3:hover {
+    background-color: #9256dc25;
+    transition-duration: 0.4s;
+    transform: scale(1.07);
+    box-shadow: 0 6px 6px rgb(226, 226, 226);
+}
 
 /******************* RESTAURANTS ******************/
 
@@ -214,7 +237,7 @@ a {
 .new_restaurant {
     padding: 5px 5px;
     position: relative;
-    margin-top: -64%;
+    margin-top: -66%;
     margin-bottom: 57%;
     text-align: right;
     margin-left: 254px;
@@ -232,7 +255,7 @@ a {
 .nom_restaurant {
     font-weight: bold;
     padding-left: 10px;
-    margin-top: -2px;
+    margin-top: 4px;
     margin-bottom: 5px;
     color: black;
     font-size: 15px;
@@ -257,11 +280,13 @@ a {
 }
 
 .like--bg {
+    width: 321px;
+    position: absolute;
     text-align: right;
-    width: 193px;
-    opacity: 0;
+    margin-top: 14px;
     color : #b79adb;
     margin-top: 14px;
+    opacity: 0;
 }
 
 .like--bg:hover{
@@ -295,8 +320,8 @@ a {
 .new_restaurant_2 {
     padding: 5px 5px;
     position: relative;
-    margin-top: -54%;
-    margin-bottom: 47%;
+    margin-top: -66%;
+    margin-bottom: 57%;
     text-align: right;
     margin-left: 254px;
     background-color: #99E2D0;
