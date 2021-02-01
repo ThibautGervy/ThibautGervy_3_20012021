@@ -102,7 +102,6 @@ a {
 }
 
 .nom_plat {
-    
     font-weight: bold;
     margin-bottom: -3px;
     margin-left: 10px;
@@ -223,6 +222,7 @@ a {
     height: 56px;
     overflow: hidden;
     margin-top: 10px;
+    text-overflow: ellipsis;
 }
 
 /******************** DESSERT 3 *********************/
@@ -245,28 +245,6 @@ a {
     text-align: center;
 }
 
-
-.btn_explore_menu {
-    width: 170px;
-    line-height: 40px;
-    border-radius: 5em;
-    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
-    border : none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 15px;
-    box-shadow: 0 3px 3px rgb(226, 226, 226);
-}
-
-.btn_explore_menu:hover {
-    background: linear-gradient(to bottom right,#fab0e5,#b79adb);
-    transition-duration: 0.4s;
-    transform: scale(1.07);
-    box-shadow: 0 6px 6px rgb(226, 226, 226);
-}
-
-
 /******************* FOOTER ******************/
 
 .footer_ohmyfood {
@@ -278,36 +256,6 @@ a {
     position: absolute;
     width: 100%;
     margin-top: 933px;
-}
-
-.footer_ohmyfood ul {
-    list-style: none;
-    padding-left: 0px;
-}
-
-.footer_ohmyfood li {
-    color: white;
-    padding-top: 9px;
-    font-size: 13px;
-}
-
-.logo_ohmyfood_footer {
-    color: white;
-    font-family:'Shrikhand', cursive; 
-    font-weight: 300;
-    font-size: 17px;
-}
-
-.fa-hands-helping {
-    padding-right: 5px;
-}
-
-.fa-utensils {
-    padding-right: 11px;
-}
-
-.footer_ohmyfood a {
-    color: white;
 }
 
 

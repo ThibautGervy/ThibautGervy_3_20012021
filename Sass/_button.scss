@@ -1,0 +1,22 @@
+@import '_couleur';
+
+
+.btn_explore_menu {
+    padding : 14px 14px;
+    border-radius: 5em;
+    background: linear-gradient(to bottom right,$rose,$violet);
+    border : none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgb(226, 226, 226);
+    width: 196px;
+    margin-top: 25px;
+
+    &:hover {
+        background: linear-gradient(to bottom right,#fab0e5,#b79adb);
+        transition-duration: 0.4s;
+        transform: scale(1.07);
+        box-shadow: 0 6px 6px rgb(226, 226, 226);
+    }
+}

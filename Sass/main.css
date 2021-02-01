@@ -1,0 +1,56 @@
+.btn_explore_menu {
+  padding: 14px 14px;
+  border-radius: 5em;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 5px #e2e2e2;
+          box-shadow: 0 5px 5px #e2e2e2;
+  width: 196px;
+  margin-top: 25px;
+}
+
+.btn_explore_menu:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(#fab0e5), to(#b79adb));
+  background: linear-gradient(to bottom right, #fab0e5, #b79adb);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  -webkit-box-shadow: 0 6px 6px #e2e2e2;
+          box-shadow: 0 6px 6px #e2e2e2;
+}
+
+.footer_ohmyfood ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.footer_ohmyfood li {
+  color: white;
+  padding-top: 9px;
+  font-size: 13px;
+}
+
+.logo_ohmyfood_footer {
+  color: white;
+  font-family: 'Shrikhand', cursive;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.fa-hands-helping {
+  padding-right: 5px;
+}
+
+.fa-utensils {
+  padding-right: 11px;
+}
+
+.footer_ohmyfood a {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

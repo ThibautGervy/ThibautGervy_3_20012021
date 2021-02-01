@@ -63,30 +63,12 @@ a {
 .explore_menu_content h1 {
     text-align: center;
     font-weight: bold;
+    font-size: 23px;
 }
 
 .explore_menu_content p {
     text-align: center;
 }
-
-.btn_explore_menu {
-    padding : 14px 14px;
-    border-radius: 5em;
-    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
-    border : none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 5px 5px rgb(226, 226, 226);
-}
-
-.btn_explore_menu:hover {
-    background: linear-gradient(to bottom right,#fab0e5,#b79adb);
-    transition-duration: 0.4s;
-    transform: scale(1.07);
-    box-shadow: 0 6px 6px rgb(226, 226, 226);
-}
-
 
 
 /**************** STEP ********************/
@@ -241,8 +223,8 @@ a {
 .new_restaurant {
     padding: 5px 5px;
     position: relative;
-    margin-top: -66%;
-    margin-bottom: 57%;
+    margin-top: -64%;
+    margin-bottom: 55%;
     text-align: right;
     margin-left: 254px;
     background-color: #99E2D0;
@@ -382,38 +364,6 @@ a {
     text-align: left;
 }
 
-.footer_ohmyfood ul {
-    list-style: none;
-    padding-left: 0px;
-}
-
-.footer_ohmyfood li {
-    color: white;
-    padding-top: 9px;
-    font-size: 13px;
-}
-
-.logo_ohmyfood_footer {
-    color: white;
-    font-family:'Shrikhand', cursive; 
-    font-weight: 300;
-    font-size: 17px;
-}
-
-.fa-hands-helping {
-    padding-right: 5px;
-}
-
-.fa-utensils {
-    padding-right: 11px;
-}
-
-a {
-    color: white;
-}
-
-
-
 /******************* ANIMATION  ******************/
 
 /********* REMPLISSAGE DU COEUR **********/
@@ -428,12 +378,6 @@ a {
     background-color: #33BEE5;
     transform: scaleX(1);
 }
-
-
-/********* APPARITION FADE IN **********/
-
-
-
 
 
 /************ LOADER *****************/
