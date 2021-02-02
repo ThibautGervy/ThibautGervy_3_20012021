@@ -1,0 +1,129 @@
+/******************* RESPONSIVE ******************/
+
+/********* ORDI **********/
+
+@media (min-width: 1024px) {
+    .step_by_step {
+        width: 700px;
+        margin: auto;
+    }
+
+    .container_step {
+        width: auto;
+    }
+
+    .step_title {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .vignettes_restaurant_1,
+    .vignettes_restaurant_2 {
+        width: 345px;
+        margin: auto;
+        height: 287px;
+        margin-bottom: 40px;
+    }
+
+    .vignettes_restaurant {
+        width: auto;
+        height: 730px;
+    }
+
+    .mediaqueries_ordi {
+        display: flex;
+    }
+
+    .title_restaurant {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 26px;
+    }
+
+    .vignettes_restaurant_2 img {
+        height: 230px;
+    }
+
+    .vignettes_restaurant_3,
+    .vignettes_restaurant_4 {
+        width: 345px;
+        margin: auto;
+    }
+
+    .new_restaurant_2 {
+        margin-top: -63%;
+        margin-bottom: 54%;
+    }
+}
+
+@media (min-width: 414px) {
+    .ensemble_menu_carte {
+        width: 100%;
+    }
+
+    .menu_carte_full {
+        margin: auto;
+        width: 375px;
+    }
+
+    .menu_carte_title {
+        margin: auto;
+        width: 375px;
+    }
+
+    .background_header img {
+        width: 100%;
+        height: 272px;
+        margin-top: 21px;
+    }
+
+    .container a {
+        width: 5%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .container img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 162px;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+/********* TABLETTE **********/
+
+
+@media (min-width: 768px) {
+    .container_step {
+        width: auto;
+    }
+
+    .step_by_step {
+        width: 700px;
+        margin: auto;
+    }
+
+    .step_title {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .title_restaurant {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 26px;
+    }
+
+    #restaurants {
+        background-color: rgba(194, 194, 194, 0.151);
+    }
+
+    .vignettes_restaurant {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}

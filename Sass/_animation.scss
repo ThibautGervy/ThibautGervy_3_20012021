@@ -1,0 +1,177 @@
+@import '_couleur';
+
+/******************* ANIMATION  ******************/
+
+/********* REMPLISSAGE DU COEUR **********/
+
+.heart_remplissage {
+    transition: all 0.3s linear 0s;
+    transform: scaleX(0);
+}
+
+.fa-heart:hover .heart_remplissage {
+    height: 100%;
+    background-color: #33BEE5;
+    transform: scaleX(1);
+}
+
+
+/************ LOADER *****************/
+
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(78, 78, 78, 0.9);
+    animation: loader 0.7s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader_item_1,
+.loader_item_2,
+.loader_item_3 {
+    height: 5rem;
+    width: 5rem;
+    animation: mouvement 2s;
+    animation-iteration-count: 1;
+}
+
+.loader_container {
+    display: flex;
+    width: 15rem;
+    justify-content: space-between;
+}
+
+.loader_item_1 {
+    color: $violet;
+    font-family: 'Shrikhand';
+    font-size: 33px;
+}
+
+.loader_item_2 {
+    color: $rose;
+    animation-delay: 0.25s;
+    font-family: 'Shrikhand';
+    font-size: 33px;
+}
+
+.loader_item_3 {
+    color: $vert;
+    animation-delay: 0.5s;
+    font-family: 'Shrikhand';
+    font-size: 33px;
+}
+
+
+@keyframes loader {
+    100% {
+        opacity: 0;
+        z-index: -20;
+    }
+}
+
+@keyframes mouvement {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(0.7rem);
+    }
+
+    75% {
+        transform: translateY(-0.7rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/********* ANIAMATION PLATS FADE IN **********/
+
+
+.menu_carte_entrees_1, .menu_carte_entrees h3 {
+    animation-name: animationmenu;
+    animation-duration: 0.5s;
+
+}
+
+.menu_carte_entrees_2, .menu_carte_plats_1  {
+    animation-name: animationmenu;
+    animation-duration: 1s;
+}
+
+.menu_carte_entrees_3, .menu_carte_plats_2  {
+    animation-name: animationmenu;
+    animation-duration: 1.5s;
+}
+
+.menu_carte_entrees_4, .menu_carte_plats_3  {
+    animation-name: animationmenu;
+    animation-duration: 2s;
+    margin-top: 10px;
+}
+
+@keyframes animationmenu {
+    from {
+        opacity: 0%;
+        transform: translateY(4em);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0em);
+    }
+}
+
+
+
+/************** CHECK MENU **********/
+
+.menu_comfirmation {
+    margin: -47px 271px;
+    background-color: #99E2D0;
+    width: 80px;
+    height: 62px;
+    color: white;
+    transform: translateX(80px);
+    transition: transform 0.4s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 0px;
+}
+
+.menu_comfirmation_icon {
+    transition: transform 0.4s;
+    font-size: 18px;
+}
+
+.animation_green:hover .menu_comfirmation {
+    cursor: pointer;
+    transform: translateX(0);
+}
+
+.animation_green:hover .menu_comfirmation_icon {
+    transform: rotate(360deg);
+    transition: transform 0.8s;
+}
+
+.prix {
+    transform: translateX(0px);
+    transition: transform 0.4s;
+}
+
+.animation_green:hover .prix {
+    transform: translateX(-90px);
+}

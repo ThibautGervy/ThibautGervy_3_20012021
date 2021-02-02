@@ -53,4 +53,366 @@
 .footer_ohmyfood a {
   color: white;
 }
+
+/******************* ANIMATION  ******************/
+/********* REMPLISSAGE DU COEUR **********/
+.heart_remplissage {
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.fa-heart:hover .heart_remplissage {
+  height: 100%;
+  background-color: #33BEE5;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/************ LOADER *****************/
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(78, 78, 78, 0.9);
+  -webkit-animation: loader 0.7s;
+          animation: loader 0.7s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader_item_1,
+.loader_item_2,
+.loader_item_3 {
+  height: 5rem;
+  width: 5rem;
+  -webkit-animation: mouvement 2s;
+          animation: mouvement 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.loader_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.loader_item_1 {
+  color: #9356DC;
+  font-family: 'Shrikhand';
+  font-size: 33px;
+}
+
+.loader_item_2 {
+  color: #FF79DA;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  font-family: 'Shrikhand';
+  font-size: 33px;
+}
+
+.loader_item_3 {
+  color: #99E2D0;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  font-family: 'Shrikhand';
+  font-size: 33px;
+}
+
+@-webkit-keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -20;
+  }
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -20;
+  }
+}
+
+@-webkit-keyframes mouvement {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(0.7rem);
+            transform: translateY(0.7rem);
+  }
+  75% {
+    -webkit-transform: translateY(-0.7rem);
+            transform: translateY(-0.7rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes mouvement {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(0.7rem);
+            transform: translateY(0.7rem);
+  }
+  75% {
+    -webkit-transform: translateY(-0.7rem);
+            transform: translateY(-0.7rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+/********* ANIAMATION PLATS FADE IN **********/
+.menu_carte_entrees_1, .menu_carte_entrees h3 {
+  -webkit-animation-name: animationmenu;
+          animation-name: animationmenu;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.menu_carte_entrees_2, .menu_carte_plats_1 {
+  -webkit-animation-name: animationmenu;
+          animation-name: animationmenu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.menu_carte_entrees_3, .menu_carte_plats_2 {
+  -webkit-animation-name: animationmenu;
+          animation-name: animationmenu;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.menu_carte_entrees_4, .menu_carte_plats_3 {
+  -webkit-animation-name: animationmenu;
+          animation-name: animationmenu;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  margin-top: 10px;
+}
+
+@-webkit-keyframes animationmenu {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(4em);
+            transform: translateY(4em);
+  }
+  to {
+    opacity: 100%;
+    -webkit-transform: translateY(0em);
+            transform: translateY(0em);
+  }
+}
+
+@keyframes animationmenu {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(4em);
+            transform: translateY(4em);
+  }
+  to {
+    opacity: 100%;
+    -webkit-transform: translateY(0em);
+            transform: translateY(0em);
+  }
+}
+
+/************** CHECK MENU **********/
+.menu_comfirmation {
+  margin: -47px 271px;
+  background-color: #99E2D0;
+  width: 80px;
+  height: 62px;
+  color: white;
+  -webkit-transform: translateX(80px);
+          transform: translateX(80px);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 0px;
+}
+
+.menu_comfirmation_icon {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  font-size: 18px;
+}
+
+.animation_green:hover .menu_comfirmation {
+  cursor: pointer;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.animation_green:hover .menu_comfirmation_icon {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+.prix {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.animation_green:hover .prix {
+  -webkit-transform: translateX(-90px);
+          transform: translateX(-90px);
+}
+
+/******************* RESPONSIVE ******************/
+/********* ORDI **********/
+@media (min-width: 1024px) {
+  .step_by_step {
+    width: 700px;
+    margin: auto;
+  }
+  .container_step {
+    width: auto;
+  }
+  .step_title {
+    text-align: center;
+    font-size: 26px;
+  }
+  .vignettes_restaurant_1,
+  .vignettes_restaurant_2 {
+    width: 345px;
+    margin: auto;
+    height: 287px;
+    margin-bottom: 40px;
+  }
+  .vignettes_restaurant {
+    width: auto;
+    height: 730px;
+  }
+  .mediaqueries_ordi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .title_restaurant {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+  }
+  .vignettes_restaurant_2 img {
+    height: 230px;
+  }
+  .vignettes_restaurant_3,
+  .vignettes_restaurant_4 {
+    width: 345px;
+    margin: auto;
+  }
+  .new_restaurant_2 {
+    margin-top: -63%;
+    margin-bottom: 54%;
+  }
+}
+
+@media (min-width: 414px) {
+  .ensemble_menu_carte {
+    width: 100%;
+  }
+  .menu_carte_full {
+    margin: auto;
+    width: 375px;
+  }
+  .menu_carte_title {
+    margin: auto;
+    width: 375px;
+  }
+  .background_header img {
+    width: 100%;
+    height: 272px;
+    margin-top: 21px;
+  }
+  .container a {
+    width: 5%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .container img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 162px;
+    margin-top: 20px;
+  }
+}
+
+/********* TABLETTE **********/
+@media (min-width: 768px) {
+  .container_step {
+    width: auto;
+  }
+  .step_by_step {
+    width: 700px;
+    margin: auto;
+  }
+  .step_title {
+    text-align: center;
+    font-size: 26px;
+  }
+  .title_restaurant {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+  }
+  #restaurants {
+    background-color: rgba(194, 194, 194, 0.151);
+  }
+  .vignettes_restaurant {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
 /*# sourceMappingURL=main.css.map */
