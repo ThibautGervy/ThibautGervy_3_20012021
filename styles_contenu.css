@@ -82,10 +82,10 @@ a {
 .menu_carte_entrees h3 {
     font-size: 14px;
     text-decoration: underline;
+    text-underline-offset: 3px;
     text-decoration-color: green;
     margin-left: 15px;
     margin-top: 25px;
-
 }
 
 
