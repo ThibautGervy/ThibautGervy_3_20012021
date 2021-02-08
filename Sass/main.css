@@ -414,6 +414,18 @@
     width: 162px;
     margin-top: 20px;
   }
+  .animation_green:hover .description_plat {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 170px;
+  }
+  .animation_green:hover .nom_plat {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 170px;
+  }
 }
 
 /********* TABLETTE **********/
