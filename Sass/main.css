@@ -20,8 +20,8 @@
           transition-duration: 0.4s;
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
-  -webkit-box-shadow: 0 6px 6px #e2e2e2;
-          box-shadow: 0 6px 6px #e2e2e2;
+  -webkit-box-shadow: 0 6px 6px #696868;
+          box-shadow: 0 6px 6px #696868;
 }
 
 .footer_ohmyfood ul {
@@ -413,6 +413,101 @@
   }
   .vignettes_restaurant {
     background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+@media (max-width: 325px) {
+  .step_by_step {
+    width: 285px;
+  }
+  .vignettes_restaurant {
+    width: auto;
+  }
+  .vignettes_restaurant_2 img {
+    max-width: 100%;
+  }
+  .vignettes_restaurant_3 img {
+    max-width: 100%;
+  }
+  .vignettes_restaurant_4 img {
+    max-width: 100%;
+  }
+  .new_restaurant {
+    margin-left: 200px;
+    padding: 5px 3px;
+  }
+  .new_restaurant_2 {
+    margin-left: 200px;
+    margin-top: -66%;
+    margin-bottom: 57%;
+    padding: 5px 3px;
+  }
+  .vignettes_restaurant_1 {
+    height: auto;
+  }
+  .like_nobg {
+    width: 267px;
+  }
+  .like_bg {
+    width: 267px;
+  }
+  .fa-heart {
+    margin-right: 30px;
+  }
+  .menu_carte_title h1 {
+    font-size: 22px;
+  }
+  .container img {
+    margin-left: 73px;
+  }
+  .background_header img {
+    width: 320px;
+  }
+  .ensemble_menu_carte {
+    width: auto;
+    position: relative;
+  }
+  .nom_plat {
+    font-size: 14px;
+  }
+  .descrption_plat {
+    font-size: 12px;
+  }
+  .footer_ohmyfood {
+    margin-top: 0px;
+  }
+  .page {
+    overflow: hidden;
+  }
+  .menu_comfirmation {
+    margin: -47px 216px;
+  }
+  .description_plat {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 135px;
+  }
+}
+
+@media (max-width: 375px) {
+  .description_plat {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 145px;
+  }
+}
+
+@media (max-width: 415px) {
+  .description_plat {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 155px;
+  }
+  .nom_plat {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */
