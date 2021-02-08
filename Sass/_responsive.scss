@@ -126,6 +126,19 @@
     .vignettes_restaurant {
         background-color: rgba(255, 255, 255, 0);
     }
+    .description_plat {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width : 155px;
+    }
+    .nom_plat {
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width : 155px;
+    }
 }
 
 
@@ -223,5 +236,9 @@
     }
     .nom_plat {
         font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width : 155px;
     }
 }
