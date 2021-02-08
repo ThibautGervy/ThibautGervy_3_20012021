@@ -311,6 +311,20 @@
           transform: translateX(-90px);
 }
 
+.animation_green:hover .description_plat {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 150px;
+}
+
+.animation_green:hover .nom_plat {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 150px;
+}
+
 /******************* RESPONSIVE ******************/
 /********* ORDI **********/
 @media (min-width: 1024px) {
@@ -357,6 +371,18 @@
   .new_restaurant_2 {
     margin-top: -63%;
     margin-bottom: 54%;
+  }
+  .animation_green:hover .description_plat {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 190px;
+  }
+  .animation_green:hover .nom_plat {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 190px;
   }
 }
 
@@ -413,19 +439,6 @@
   }
   .vignettes_restaurant {
     background-color: rgba(255, 255, 255, 0);
-  }
-  .description_plat {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 155px;
-  }
-  .nom_plat {
-    font-size: 14px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 155px;
   }
 }
 
@@ -494,37 +507,6 @@
   }
   .menu_comfirmation {
     margin: -47px 216px;
-  }
-  .description_plat {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 135px;
-  }
-}
-
-@media (max-width: 375px) {
-  .description_plat {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 145px;
-  }
-}
-
-@media (max-width: 415px) {
-  .description_plat {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 155px;
-  }
-  .nom_plat {
-    font-size: 14px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 155px;
   }
 }
 /*# sourceMappingURL=main.css.map */

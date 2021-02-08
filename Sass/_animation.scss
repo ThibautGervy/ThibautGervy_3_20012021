@@ -176,3 +176,16 @@
     transform: translateX(-90px);
 }
 
+.animation_green:hover .description_plat {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width : 150px;
+}
+
+.animation_green:hover .nom_plat {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width : 150px;
+}
